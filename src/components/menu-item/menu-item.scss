@@ -1,13 +1,39 @@
 .home_card_item {
     margin-bottom: 20px;
-}
 
-.directory-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    .home_card_img{
+        height: 200px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            -o-object-fit: cover;
+        }
+    }
+    .home_card_content{
+        // padding-top: 10px;
+
+        h2{
+            margin-top: 0;
+            margin-bottom: 0px;
+            color: #111;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        label{
+            margin-bottom: 0;
+            margin-top: 5px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #333;
+            cursor: pointer;
+        }
+    }
+}
 
 .menu-item {
     min-width: 30%;
@@ -77,6 +103,3 @@
       }
     }
   }
-  
-
-  html{}
