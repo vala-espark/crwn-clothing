@@ -1,0 +1,14 @@
+.collection-item-box{
+
+    .collection-item-title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5rem 0rem 1rem;
+        
+        h4{
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -2,11 +2,11 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import './menu-item.scss'
 
-const MenuItem = ({ title, imgUrl, history, linkUrl, match}) => {
+const MenuItem = ({ title, imgUrl, history, linkUrl, match }) => {
     return (
         <>
             <div className="col col-4">
-                <div className="home_card_item card" onClick={()=> history.push(`${match.url}${linkUrl}`)}>
+                <div className="home_card_item card" onClick={() => history.push(`${match.url}${linkUrl}`)}>
                     <div className="home_card_img">
                         <img src={imgUrl} alt="" />
                     </div>

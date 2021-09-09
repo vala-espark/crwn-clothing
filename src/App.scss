@@ -1,8 +1,15 @@
+$primary-bg: #11a0ff;
+$secondary-bg: #94afc0;
+$primary-color: #000b13;
+$secondary-bg: #94afc0;
+$white:#fff;
+$black:#000;
+
 *{box-sizing: border-box;}
 
 section{padding: 50px 0;}
-.container{max-width: 1170px;margin-left: auto;margin-right: auto;padding-right:15px;padding-left:15px;}
-.container-fluid{max-width:100%;margin-right:15px;margin-left:15px;}
+.container{max-width: 1366px;margin-left: auto;margin-right: auto;padding-right:15px;padding-left:15px;}
+.container-fluid{max-width:100%;padding-right:15px;padding-left:15px;}
 .row{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
 
 .row > .col{width:100%;padding-right:15px;padding-left:15px;}
@@ -23,6 +30,22 @@ section{padding: 50px 0;}
 .off_bg{
     background-color: #f5f5f5;
 }
+.btn{
+    padding: 6px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: $primary-bg;
+    color: $white;
+}
+.btn-sm{
+    padding: 4px 8px;
+    font-size: 0.6rem;
+}
+
 .card{
     box-shadow: rgba(0, 0, 0,0.10) 0px 10px 50px;
     border-radius: 10px;
@@ -37,7 +60,30 @@ section{padding: 50px 0;}
     &:hover{
         box-shadow: rgba(0, 0, 0,0.30)  0px 10px 50px;
     }
-}
-.card-body{
-    padding: 15px;
+
+    .card-header{
+        padding: 1.5rem 1rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h4{
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .card-link{
+            display: inline-block;
+            font-size: 0.8rem;
+            cursor: pointer;
+            color: $primary-color;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    .card-body{
+        padding: 1rem;
+    }
 }
