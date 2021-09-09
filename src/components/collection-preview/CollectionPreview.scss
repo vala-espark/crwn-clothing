@@ -1,5 +1,9 @@
 .collection-item-box{
 
+    &:not(:first-child){
+        margin-top: 10px;
+    }
+
     .collection-item-title{
         display: flex;
         flex-wrap: wrap;

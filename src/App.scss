@@ -27,6 +27,11 @@ section{padding: 50px 0;}
 .col-12{-ms-flex:0 0 100%;-webkit-box-flex:0;flex: 0 0 100%;max-width: 100%;}
 .mx-auto{margin-left: auto;margin-right: auto;}
 
+a{
+    text-decoration: none;
+    color: $primary-color;
+}
+
 .off_bg{
     background-color: #f5f5f5;
 }

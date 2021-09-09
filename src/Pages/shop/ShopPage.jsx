@@ -19,7 +19,6 @@ class ShopPage extends React.Component {
 
         return (
             <>
-                <h1>Shop Page</h1>
                 <section className="shopepage_sec off_bg">
                     <div className="container">
                         <div className="row">

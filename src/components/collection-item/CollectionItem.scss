@@ -1,29 +1,29 @@
-.collection-item{
+.collection-item {
     width: 100%;
-    box-shadow: rgba(0,0, 0, 0.10) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     overflow: hidden;
     background-color: #fff;
     border-radius: 10px;
 
-    img{
+    img {
         height: 340px;
         width: 100%;
         object-fit: cover;
     }
 
-    .collection-item-content{
+    .collection-item-content {
         padding: 15px;
         display: flex;
         justify-content: space-between;
 
-        p{
+        p {
             margin: 0;
         }
-        .name{
+        .name {
             color: #000;
             font-weight: 500;
         }
-        .price{
+        .price {
             color: #333;
         }
     }

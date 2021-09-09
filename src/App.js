@@ -4,6 +4,7 @@ import './App.scss';
 
 import HomePage from './Pages/homePage/HomePage';
 import ShopPage from './Pages/shop/ShopPage';
+import Header from './components/header/Header';
 
 const Hats = (props) => {
   console.log(props);
@@ -17,6 +18,7 @@ const Hats = (props) => {
 function App() {
   return (
     <>
+    <Header/>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/shop" component={ShopPage} />
