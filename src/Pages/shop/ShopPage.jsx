@@ -22,12 +22,13 @@ class ShopPage extends React.Component {
                 <section className="shopepage_sec off_bg">
                     <div className="container">
                         <div className="row">
-                            {
-                                collections.map(({ id, ...othercollectiondata }) => (
-                                    <CollectionPreview key={id} {...othercollectiondata} />
-                                ))
-                            }
-
+                            <div className="col col-12">
+                                {
+                                    collections.map(({ id, ...othercollectiondata }) => (
+                                        <CollectionPreview key={id} {...othercollectiondata} />
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -5,22 +5,21 @@ import CollectionItem from '../collection-item/CollectionItem';
 const CollectionPreview = ({ title, items }) => {
     return (
         <>
-            <div className="col col-12">
-                <div className="collection-preview">
-                    <div className="collection-item-box">
-                        <div className="collection-item-title">
-                            <h4>{title.toUpperCase()}</h4>
-                            <span className="collection-item-link">View More</span>
-                        </div>
-                        <div className="collection-item-content">
-                            <div className="row">
-                                {
-                                    items.filter((item, index) => index < 4)
-                                        .map(({ id, ...otherItemData }) => (
-                                            <CollectionItem key={id} {...otherItemData} />
-                                        ))
-                                }
-                            </div>
+            <div className="collection-preview">
+                <div className="collection-item-box">
+                    <div className="collection-item-title">
+                        <h4>{title.toUpperCase()}</h4>
+                        <span className="collection-item-link">View More</span>
+                    </div>
+                    <div className="collection-item-content">
+                        <div className="row">
+                            {
+                                items.filter((item, index) => index < 4)
+                                    .map(({ id, ...otherItemData }) => (
+                                        <CollectionItem key={id} {...otherItemData} />
+                                    )
+                                    )
+                            }
                         </div>
                     </div>
                 </div>

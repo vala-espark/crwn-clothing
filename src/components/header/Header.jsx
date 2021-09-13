@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { auth } from '../../firebase/firebase.utils';
 import './Header.scss'
 
-const Header = () => {
+const Header = ({ currentUser }) => {
     return (
         <>
             <header>
@@ -25,8 +26,18 @@ const Header = () => {
                                         <NavLink exact to="/shop">Shop</NavLink>
                                     </li>
                                     <li className="header-menu-item">
-                                        <NavLink exact to="">Contact</NavLink>
+                                        <NavLink exact to="/contact">Contact</NavLink>
                                     </li>
+                                    {
+                                        currentUser ?
+                                                <li className="header-menu-item">
+                                                    <a onClick={() => auth.signOut()}>Sign out</a>
+                                                </li>
+                                            :
+                                                <li className="header-menu-item">
+                                                    <NavLink exact to="/login">Login</NavLink>
+                                                </li>
+                                    }
                                 </ul>
                             </div>
                         </div>
