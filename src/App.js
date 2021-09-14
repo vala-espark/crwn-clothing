@@ -46,7 +46,7 @@ class App extends React.Component {
           //   console.log(this.state, "USER/......");
           // }
           );
-          console.log(this.state,"USER");
+          // console.log(this.state,"USER");
         });
       }
       this.setState({currentUser : userAuth});
