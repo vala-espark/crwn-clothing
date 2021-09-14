@@ -29,14 +29,15 @@ const Header = ({ currentUser }) => {
                                         <NavLink exact to="/contact">Contact</NavLink>
                                     </li>
                                     {
-                                        currentUser ?
-                                                <li className="header-menu-item">
-                                                    <a onClick={() => auth.signOut()}>Sign out</a>
-                                                </li>
+                                        currentUser
+                                            ?
+                                            <li className="header-menu-item">
+                                                <a onClick={() => auth.signOut()}>Sign out</a>
+                                            </li>
                                             :
-                                                <li className="header-menu-item">
-                                                    <NavLink exact to="/login">Login</NavLink>
-                                                </li>
+                                            <li className="header-menu-item">
+                                                <NavLink exact to="/login">Login</NavLink>
+                                            </li>
                                     }
                                 </ul>
                             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import SignIn from '../../components/signIn/SignIn';
+import Signup from '../../components/signup/signup';
 
 const Authentication = () => {
     return (
@@ -11,6 +12,9 @@ const Authentication = () => {
                             <div className="row">
                                 <div className="col col-6">
                                     <SignIn />
+                                </div>
+                                <div className="col col-6">
+                                    <Signup />
                                 </div>
                             </div>
                         </div>

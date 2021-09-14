@@ -23,12 +23,11 @@ class SignIn extends React.Component {
 
     handleChange = (e) => {
         const { value, name } = e.target;
-
         this.setState({ [name]: value })
     }
 
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         return (
             <>
                 <div className="card">
@@ -45,7 +44,7 @@ class SignIn extends React.Component {
                                     handleChange={this.handleChange}
                                     label="email"
                                     id=""
-                                    required="true"
+                                    required={true}
                                 />
                             </div>
                             <div className="input-group">
@@ -56,7 +55,7 @@ class SignIn extends React.Component {
                                     handleChange={this.handleChange}
                                     label="Password"
                                     id=""
-                                    required="true"
+                                    required={true}
                                 />
                             </div>
                             <div className="input-group btn-group">
